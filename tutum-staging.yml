@@ -1,0 +1,21 @@
+votinglb:
+  image: tutum/haproxy
+  links:
+    - visits
+  ports:
+    - '80:80'
+  roles:
+    - global
+  tags:
+    - staging
+visits:
+  image: tutum.co/pablo/visits:staging
+  links:
+    - redis
+  target_num_containers: 2
+  tags:
+    - staging
+redis:
+  image: redis
+  tags:
+    - staging

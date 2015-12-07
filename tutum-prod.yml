@@ -1,0 +1,21 @@
+votinglb:
+  image: tutum/haproxy
+  links:
+    - visits
+  ports:
+    - '80:80'
+  roles:
+    - global
+  tags:
+    - prod
+visits:
+  image: tutum.co/pablo/visits:latest
+  links:
+    - redis
+  target_num_containers: 2
+  tags:
+    - prod
+redis:
+  image: redis
+  tags:
+    - prod
