@@ -1,5 +1,5 @@
 votinglb:
-  image: tutum/haproxy
+  image: dockercloud/haproxy
   links:
     - visits
   ports:
@@ -9,12 +9,12 @@ votinglb:
   tags:
     - staging
 visits:
-  image: tutum.co/pablo/visits:staging
+  image: pchico83/visits:staging
   links:
     - redis
-  target_num_containers: 2
   tags:
     - staging
+  autoredeploy: true
 redis:
   image: redis
   tags:

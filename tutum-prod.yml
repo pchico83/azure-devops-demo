@@ -1,5 +1,5 @@
 votinglb:
-  image: tutum/haproxy
+  image: dockercloud/haproxy
   links:
     - visits
   ports:
@@ -9,7 +9,7 @@ votinglb:
   tags:
     - prod
 visits:
-  image: tutum.co/pablo/visits:latest
+  image: pchico83/visits:staging
   links:
     - redis
   target_num_containers: 2
