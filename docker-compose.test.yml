@@ -2,9 +2,9 @@ sut:
   build: .
   links:
     - web
+  command: /app/test.sh
 web:
   build: .
-  dockerfile: Dockerfile
   links:
     - redis
 redis:
