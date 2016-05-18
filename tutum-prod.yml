@@ -12,7 +12,7 @@ visits:
   image: pchico83/visits:latest
   links:
     - redis
-  target_num_containers: 2
+  deployment_strategy: every_node
   tags:
     - prod
 redis:
