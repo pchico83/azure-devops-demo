@@ -9,7 +9,7 @@ votinglb:
   tags:
     - prod
 visits:
-  image: pchico83/visits:staging
+  image: pchico83/visits:latest
   links:
     - redis
   target_num_containers: 2

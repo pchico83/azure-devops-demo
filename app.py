@@ -16,6 +16,7 @@ def hello():
 
     html = "<h3>Hola DevOps OS Azure Day!</h3>" \
            "<b>Hostname:</b> {hostname}<br/>" \
+           "<b>Visits:</b> {visits}<br/>" \
            "<br/>"
 
     return html.format(hostname=socket.gethostname(), visits=visits)
