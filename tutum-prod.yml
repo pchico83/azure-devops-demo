@@ -9,7 +9,7 @@ votinglb:
   tags:
     - prod
 visits:
-  image: pchico83/visits:latest
+  image: pchico83/demo:latest
   links:
     - redis
   deployment_strategy: every_node
