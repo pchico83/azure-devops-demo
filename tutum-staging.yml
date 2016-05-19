@@ -9,11 +9,12 @@ votinglb:
   tags:
     - staging
 visits:
-  image: pchico83/visits:staging
+  image: pchico83/demo:staging
   links:
     - redis
   tags:
     - staging
+  target_num_containers: 2
   autoredeploy: true
 redis:
   image: redis
