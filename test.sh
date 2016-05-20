@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sleep 5
+sleep 100000000
 if curl web | grep -q 'Hola DevOps OS Azure Day!'; then
   echo "Tests passed!"
   exit 0
